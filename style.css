@@ -104,20 +104,14 @@ footer{
 
 
 
+/*iOS não aceita parallax*/
 
-
-@media (max-width: 768px) {
-    .imagem {
-        background-attachment: scroll;   /* desliga parallax no iOS */
-        background-position: center;     /* centraliza o fundo */
-        height: 50vw;                     /* altura proporcional à largura da tela */
-        padding-top: 5vw;                 /* mantém espaço para o texto */
-        padding-bottom: 5vw;
+@media(max-width:360px){
+    #img1{
+     background-attachment: scroll;
     }
-
-    .imagem p {
-        /* mantém o tamanho do texto igual ao restante dos parágrafos */
-        padding: 5px;
+    #img2{
+        background-attachment: scroll;
     }
 }
 
